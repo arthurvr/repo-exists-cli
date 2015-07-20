@@ -8,7 +8,7 @@ var cli = meow({
 	help: [
 		'Usage',
 		'  $ repo-exists h5bp/html5please',
-		'  ' + logSymbols.success +' Exists!'
+		'  ' + logSymbols.success + ' Exists!'
 	]
 });
 
@@ -18,7 +18,7 @@ if (cli.input.length === 0) {
 		'',
 		'Example',
 		'  $ repo-exists h5bp/html5-boilerplate',
-		'  ' + logSymbols.success +' Exists!'
+		'  ' + logSymbols.success + ' Exists!'
 	].join('\n'));
 
 	return;
