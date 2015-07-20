@@ -1,33 +1,21 @@
-# repo-exists [![Build Status](https://travis-ci.org/arthurvr/repo-exists.svg?branch=master)](https://travis-ci.org/arthurvr/repo-exists)
+# repo-exists-cli [![Build Status](https://travis-ci.org/arthurvr/repo-exists-cli.svg?branch=master)](https://travis-ci.org/arthurvr/repo-exists-cli)
 
-> Check if a GitHub repo exists
+> CLI to check if a GitHub repo exists
+
+*See [repo-exists](https://github.com/arthurvr/repo-exists) for programmatic API.*
 
 ## Usage
 
 ```
-$ npm install --save repo-exists
+$ npm install --global repo-exists-cli
 ```
 
-```javascript
-var repoExists = require('repo-exists');
-
-repoExists('h5bp/html5please', function (error, exists) {
-	if (error) {
-		throw error;
-	}
-
-	console.log(exists);
-	//=> true
-});
 ```
-
-## CLI
-
+$ repo-exists --help
+	Usage
+	  $ repo-exists h5bp/html5please
+	  ✔ Exists!'
 ```
-$ npm install --global repo-exists
-```
-
-![](http://i.imgur.com/06B0lsE.png)
 
 ## License
 

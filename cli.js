@@ -2,7 +2,7 @@
 'use strict';
 var meow = require('meow');
 var logSymbols = require('log-symbols');
-var repoExists = require('./');
+var repoExists = require('repo-exists');
 
 var cli = meow({
 	help: [

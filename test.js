@@ -1,17 +1,13 @@
 'use strict';
+var execFile = require('child_process').execFile;
+var path = require('path');
 var test = require('ava');
-var repoExists = require('./');
 
 test(function (t) {
-	t.plan(4);
+	t.plan(2);
 
-	repoExists('arthurvr/something-that-does-not-exist', function (error, exists) {
+	execFile(path.join(__dirname, 'cli.js'), ['--help'], function (error, stdout) {
 		t.assert(!error, error);
-		t.assert(!exists);
-	});
-
-	repoExists('h5bp/html5-boilerplate', function (error, exists) {
-		t.assert(!error, error);
-		t.assert(exists);
+		t.assert(/GitHub repo exists/.test(stdout));
 	});
 });

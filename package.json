@@ -1,7 +1,7 @@
 {
-  "name": "repo-exists",
-  "version": "1.0.1",
-  "description": "Check if a GitHub repo exists",
+  "name": "repo-exists-cli",
+  "version": "0.0.0",
+  "description": "CLI to Check if a GitHub repo exists",
   "keywords": [
     "open-source",
     "github",
@@ -12,21 +12,25 @@
     "repository",
     "existence",
     "exists",
-    "API"
+    "API",
+    "bin",
+    "cli",
+    "cli-app"
   ],
   "license": "MIT",
   "author": "Arthur Verschaeve <contact@arthurverschaeve.be>",
   "files": [
-    "index.js",
     "cli.js"
   ],
   "repository": "arthurvr/repo-exists",
   "scripts": {
     "test": "node test.js"
   },
-  "bin": "cli.js",
+  "bin": {
+    "repo-exists": "cli.js"
+  },
   "dependencies": {
-    "gh-got": "^1.0.3",
+    "repo-exists": "^2.0.0",
     "log-symbols": "^1.0.2",
     "meow": "^3.3.0"
   },
