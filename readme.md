@@ -4,6 +4,7 @@
 
 *See [repo-exists](https://github.com/arthurvr/repo-exists) for programmatic API.*
 
+
 ## Usage
 
 ```
@@ -17,6 +18,7 @@ $ repo-exists --help
 	  ✔ Exists!
 ```
 
+
 ## License
 
-MIT © [Arthur Verschaeve](https://github.com/arthurvr)
+MIT © [Arthur Verschaeve](http://arthurverschaeve.be)
