@@ -13,9 +13,10 @@ $ npm install --global repo-exists-cli
 
 ```
 $ repo-exists --help
-	Usage
-	  $ repo-exists h5bp/html5please
-	  ✔ Exists!
+
+  Usage
+    $ repo-exists h5bp/html5please
+    ✔ Exists!
 ```
 
 
