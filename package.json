@@ -24,7 +24,7 @@
   ],
   "repository": "arthurvr/repo-exists",
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "bin": {
     "repo-exists": "cli.js"
@@ -35,15 +35,10 @@
     "meow": "^3.3.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4",
+    "ava": "*",
     "xo": "*"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "xo": {
-    "envs": [
-      "node"
-    ]
   }
 }

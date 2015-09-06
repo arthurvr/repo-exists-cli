@@ -7,7 +7,7 @@ test(function (t) {
 	t.plan(2);
 
 	execFile(path.join(__dirname, 'cli.js'), ['--help'], function (error, stdout) {
-		t.assert(!error, error);
-		t.assert(/GitHub repo exists/.test(stdout));
+		t.error(error);
+		t.regexTest(/GitHub repo exists/, stdout);
 	});
 });
