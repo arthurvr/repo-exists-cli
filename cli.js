@@ -21,7 +21,7 @@ if (cli.input.length === 0) {
 		'  ' + logSymbols.success + ' Exists!'
 	].join('\n'));
 
-	return;
+	process.exit(1);
 }
 
 repoExists(cli.input[0], function (err, exists) {
