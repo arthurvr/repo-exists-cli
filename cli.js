@@ -4,13 +4,11 @@ var meow = require('meow');
 var logSymbols = require('log-symbols');
 var repoExists = require('repo-exists');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ repo-exists h5bp/html5please',
-		'  ' + logSymbols.success + ' Exists!'
-	]
-});
+var cli = meow([
+	'Usage',
+	'  $ repo-exists h5bp/html5please',
+	'  ' + logSymbols.success + ' Exists!'
+]);
 
 if (cli.input.length === 0) {
 	console.error([
